@@ -2,21 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Playfair', serif;
 }
 
+body {
+    height: 100%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/469/232/original/abstract-white-background-with-halftone-texture-free-vector.jpg");
+}
+
+/*--------------------------------------------- Header part ---------------------------------------------*/
+
+header {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
 .billboard-search {
+    position: relative;
     width: 100%;
     height: 80px;
     background-color: #002069;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 300;
 }
 
+/* logo configs */
 .logo {
     width: 35%;
     display: flex;
@@ -37,6 +51,7 @@ body {
     padding-bottom: 5px;
 }
 
+/* Select configs */
 .cinema-search {
     display: flex;
     align-items: center;
@@ -59,14 +74,15 @@ body {
 }
 
 .cinema-search button {
-    width: 130px;
+    width: 150px;
     height: 35px;
     margin: 0 5px;
     border: none;
     border-radius: 5px;
     background-color: #E1B532;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
     transition: .2s;
 }
 
@@ -74,15 +90,19 @@ body {
     cursor: pointer;
     background-color: #FECB34;
     transform: translateY(-2px);
-
 }
 
+/* Nav bar with button and links to social media */
 .main-nav {
+    position: relative;
     background-color: #222222;
     height: 45px;
     display: flex;
+    z-index: 300;
+
 }
 
+/* menu part */
 .menu {
     display: flex;
     text-align: center;
@@ -90,6 +110,7 @@ body {
     width: 50%;
 }
 
+/* menu button */
 .menu button {
     text-decoration: none;
     border: none;
@@ -103,6 +124,61 @@ body {
     text-shadow: 0 0 1px #fff7de;
 }
 
+/* div will show when click the button "menu" */
+
+.menu-div {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    background-color: #161616;
+    transform: translateY(-200%);
+    transition: .3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+}
+
+/* class will be toggle to show the div */
+.menu-div.show {
+    transform: translateY(0);
+}
+
+.menu-div-items {
+    width: 150px;
+    margin: 20px;
+    transition: color 1s, border 1s;
+}
+
+.menu-div-items a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: #aaa;
+}
+
+.menu-div-items:hover h3 {
+    text-decoration: none;
+    color: #FECA30;
+}
+
+.menu-div-items:hover img {
+    border: 1px solid #FECA30;
+}
+
+.menu-div-items img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    transition: border 1s;
+}
+
+.menu-div-items h3 {
+    margin: 20px;
+    transition: color 0.6s;
+}
+
+/*--------------------------------------------- Socials part ---------------------------------------------*/
 .socials {
     width: 50%;
     display: flex;
@@ -145,7 +221,7 @@ body {
 }
 
 .instagram:hover {
-    background: linear-gradient(45deg, #ffbd2f, #f64f59, #C13584, #833ab4); 
+    background: linear-gradient(45deg, #ffbd2f, #f64f59, #C13584, #833ab4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -154,3 +230,117 @@ body {
 .youtube:hover {
     color: #ff0000;
 }
+
+
+/*------------------------------------------------- Main ------------------------------------------------- */
+
+/*  ---------------------------Main Slider --------------------------------*/
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 60vh;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-dots .dot.active {
+    background-color: #000;
+  }
+
+  /* Check the listings */
+
+.listings-tittle-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.listings-tittle-container a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #004cff;
+    width: 30%;
+    height: 30px;
+    top: 50%;
+    left:20%;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.listings-tittle-container a i  {
+    height:100%;
+    position: absolute;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    background-color:#002069;
+    right: 0;
+    transition: .2s;
+}
+
+.listings-tittle-container a:hover  {
+    background-color:#002069;
+}
+
+.listings-tittle-container a:hover i {
+    background-color:#004cff;
+}
+
+
+
