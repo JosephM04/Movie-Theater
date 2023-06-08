@@ -56,7 +56,7 @@ var dots = document.querySelectorAll('.carousel-dots .dot');
 var currentIndex = 0;
 var timer;
 
-// Función para cambiar a la siguiente imagen
+// function to change to next image
 function nextSlide() {
   currentIndex++;
   if (currentIndex >= carouselImages.length) {
@@ -65,7 +65,7 @@ function nextSlide() {
   updateCarousel();
 }
 
-// Función para cambiar a la imagen anterior
+// Function to change previous image
 function prevSlide() {
   currentIndex--;
   if (currentIndex < 0) {
@@ -74,31 +74,31 @@ function prevSlide() {
   updateCarousel();
 }
 
-// Función para actualizar el carrusel con la imagen actual
+// Function to update to actual image
 function updateCarousel() {
   var translateValue = -currentIndex * carouselContainer.offsetWidth;
   carouselContainer.style.transform = 'translateX(' + translateValue + 'px)';
   updateDots();
 }
 
-// Función para actualizar los puntos de navegación
+// Function to update nav dots
 function updateDots() {
   dots.forEach(function(dot, index) {
     dot.classList.toggle('active', index === currentIndex);
   });
 }
 
-// Función para iniciar el temporizador
+// Function to start the timer
 function startTimer() {
   timer = setInterval(nextSlide, 4000);
 }
 
-// Función para detener el temporizador
+// Function to stop timer
 function stopTimer() {
   clearInterval(timer);
 }
 
-// Agrega eventos a los botones de navegación
+// Events for nav buttons
 prevButton.addEventListener('click', function(e) {
   e.preventDefault();
   prevSlide();
@@ -113,7 +113,7 @@ nextButton.addEventListener('click', function(e) {
   startTimer();
 });
 
-// Agrega eventos a los puntos de navegación
+// Events for nav dots
 dots.forEach(function(dot, index) {
   dot.addEventListener('click', function(e) {
     e.preventDefault();
@@ -124,14 +124,6 @@ dots.forEach(function(dot, index) {
   });
 });
 
-// Inicia el carrusel
+// Start carrousel
 updateCarousel();
 startTimer();
-
-
-
-
-
-
-
-
