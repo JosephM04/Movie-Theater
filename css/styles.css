@@ -6,9 +6,8 @@
 }
 
 body {
-    height: 100%;
+    width: 100%;
     background-image: linear-gradient(to top, #f3e7e9 0%, #fff 99%, #e3eeff 100%);
-    /* background-image: url("data:image/jpeg;base64,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"); */
 }
 
 /*--------------------------------------------- Header part ---------------------------------------------*/
@@ -20,14 +19,21 @@ header {
     z-index: 1000;
 }
 
+.menu-responsive {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 .billboard-search {
     position: relative;
     width: 100%;
-    height: 80px;
+    padding: 5px;
     background-color: #002069;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     z-index: 300;
 }
 
@@ -56,7 +62,8 @@ header {
 .cinema-search {
     display: flex;
     align-items: center;
-    width: 65%
+    flex-wrap: wrap;
+    width: 65%;
 }
 
 .cinema-search select {
@@ -97,10 +104,9 @@ header {
 .main-nav {
     position: relative;
     background-color: #222222;
-    height: 45px;
+    /* height: 45px; */
     display: flex;
     z-index: 300;
-
 }
 
 /* menu part */
@@ -196,6 +202,7 @@ header {
 .socials ul li {
     display: flex;
     align-items: center;
+
     font-size: 1.8rem;
     list-style: none;
 }
@@ -263,18 +270,18 @@ main {
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
 .carousel-control.prev {
-    left: 10px;
+    left: 0;
 }
 
 .carousel-control.next {
-    right: 10px;
+    right: 0;
 }
 
 .carousel-dots {
@@ -304,7 +311,8 @@ main {
 /* --------horizontal banner --------------- */
 .horizontal-banner {
     height: 120px;
-    width: 65vw;
+    width: 95vw;
+    max-width: 900px;
     margin: 25px auto;
     border: 1px solid #dfdfdf;
     border-radius: 5px;
@@ -330,12 +338,12 @@ main {
 
 
 .listings-tittle-container {
-    width: 70%;
-    height: 120px;
-    margin: auto;
+    width: 95vw;
+    max-width: 700px;
+    margin: 35px auto;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 .check-listings {
@@ -346,22 +354,25 @@ main {
     text-decoration: none;
     color: #ffffff;
     background-color: #004cff;
-    width: 30%;
-    height: 40px;
-    font-weight: 500;
+    width: 95vw;
+    max-width: 500px;
+    padding: 5px;
+    font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: .5s;
 }
 
 .check-listings i {
     height: 100%;
     position: absolute;
-    font-weight: 500;
-    font-size: 2.3rem;
+    font-weight: 400;
+    padding: 10px 5px;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     background-color: #002069;
     right: 0;
+    margin: auto 0;
     transition: .2s;
 }
 
@@ -383,35 +394,15 @@ main {
 
 /* Aside */
 
-
-/* ------------Vertical banner ------ */
-
-.vertical-banner {
-    width: 20%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 35px;
-}
-
-.vertical-banner img,
-.vertical-banner a {
-    width: 130px;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-    object-position: center;
-}
-
 /* section */
 .listings-container {
     display: flex;
-    justify-content: end;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
 }
 
 .listings {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -500,7 +491,7 @@ main {
     justify-content: center;
     top: 0;
     opacity: 0;
-    box-shadow: 0 0 50px rgba(150, 150, 150,50);
+    box-shadow: 0 0 50px rgba(150, 150, 150, 50);
     transition: opacity .4s;
 }
 
@@ -513,7 +504,7 @@ main {
     color: #ddd;
     text-align: center;
     text-decoration: none;
-    padding:5px;
+    padding: 5px;
 }
 
 .movie-hover a:hover {
@@ -550,7 +541,7 @@ main {
 }
 
 .search-movie * {
-    width:200px;
+    width: 200px;
     padding: 5px 0;
     margin: 5px 0;
 }
@@ -572,8 +563,9 @@ main {
 
 .change-country select,
 .search-movie input {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-shadow: 0 0 #111;
+    border-radius: 7px;
 }
 
 .footer-container {
@@ -630,7 +622,6 @@ main {
 
 .about {
     width: 70%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -641,7 +632,7 @@ main {
 .about-movie {
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
@@ -695,7 +686,8 @@ main {
 }
 
 .synopsis p {
-    width: 60%;
+    width: 90vw;
+    max-width: 600px;
     text-align: left;
     margin: 20px;
     color: #333;
@@ -710,4 +702,87 @@ main {
 .synopsis table * {
     box-shadow: 0 0 5px #fafafa;
     padding: 20px;
+}
+
+/* Responsive design */
+
+/* ------------------------------ index ------------------------------ */
+
+/* Header */
+
+@media screen and (max-width: 600px) {
+
+    .cinema-search {
+        width: 100%;
+        display: none;
+        transform: translateX(200%);
+    }
+
+    .menu-responsive {
+        display: block;
+        width: 5%;
+    }
+
+    .logo {
+        font-size: 0.9rem;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main-nav {
+        position: absolute;
+        width:100%;
+        transform: translateX(-100%);
+        transition: .3s ease-out;
+    }
+
+    .show-main-nav {
+        display: block;
+        transform: translateY(0%);
+    }
+
+    .socials {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .socials ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .socials ul li:last-child {
+        margin-right: 0;
+    }
+
+    .menu-div {
+        transform: translateY(0);
+        transform: translateX(-100%);
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .show-menu {
+        display: block;
+        transform: translateX(0);
+    }
+    .carousel-container {
+        height: 30vh;
+    }
+    .carousel-control {
+        padding: 0;
+    }
+
+    .check-listings {
+        font-size: .8rem;
+    }
+
 }
