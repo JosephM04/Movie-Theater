@@ -127,3 +127,13 @@ dots.forEach(function(dot, index) {
 // Start carrousel
 updateCarousel();
 startTimer();
+
+// responsive menu hamburger 
+
+const hamburgerMenu = document.querySelector(".menu-responsive");
+const mainNav = document.querySelector(".main-nav");
+console.log(mainNav)
+hamburgerMenu.addEventListener("click", () => {
+  clickMenu.classList.toggle("show-menu");
+  mainNav.classList.toggle("show-main-nav");
+})
