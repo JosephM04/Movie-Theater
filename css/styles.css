@@ -256,7 +256,8 @@ main {
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 50vh;
+    height: 65vh;
+    box-shadow: 0 0 20px rgb(48, 48, 48);
 }
 
 .carousel img {
@@ -506,12 +507,13 @@ main {
     text-decoration: none;
     padding: 5px;
 }
+.movie-hover a {
+    padding: 50px 5px;
+}
 
 .movie-hover a:hover {
     text-decoration: underline;
 }
-
-
 
 /* --------------------------------footer------------------------------------ */
 .footer {
