@@ -54,4 +54,15 @@ console.log(mainNav)
 hamburgerMenu.addEventListener("click", () => {
   clickMenu.classList.toggle("show-menu");
   mainNav.classList.toggle("show-main-nav");
-})
+});
+
+// Hours for every movie 
+
+const divHours = document.querySelector(".hours");
+
+divHours.innerHTML = `
+  <button class="hours-btn">3:00 PM</button>
+  <button class="hours-btn">4:30 PM</button>
+  <button class="hours-btn">6:45 PM</button>
+  <button class="hours-btn">8:45 PM</button>
+`
