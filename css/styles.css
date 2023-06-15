@@ -256,7 +256,7 @@ main {
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 65vh;
+    height: 50vh;
     box-shadow: 0 0 20px rgb(48, 48, 48);
 }
 
@@ -631,6 +631,10 @@ main {
     margin: auto;
 }
 
+.about h3 {
+    margin-top: 20px ;
+}
+
 .about-movie {
     width: 100%;
     display: flex;
@@ -641,7 +645,8 @@ main {
 }
 
 .about-movie img {
-    height: 500px;
+    max-width: 100%;
+    max-height: 500px;
     border-radius: 5px;
     box-shadow: 0 0 5px #ccc;
 }
@@ -659,25 +664,55 @@ main {
 .clasification * {
     margin: 3px;
     font-weight: 400;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
 }
 
-.clasification :nth-child(1) {
+.clasification p:nth-child(1) {
     background-color: #ccc;
     color: #fff;
-    padding: 2px 5px;
 }
 
-.clasification :nth-child(2) {
+.clasification p:nth-child(2) {
     background-color: #111;
     color: #fff;
-    padding: 2px 5px;
 }
 
-.clasification :nth-child(3) {
+.clasification p:nth-child(3) {
     background-color: #3b5998;
     color: #fff;
-    padding: 2px 5px;
 }
+.clasification p:nth-child(3) {
+    background-color: #3b5998;
+    color: #fff;
+}
+.clasification p:nth-child(4) {
+    line-height: 1.5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hours {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hours-btn {
+    padding: 10px 25px;
+    margin: 3px;
+    border-radius: 10px;
+    border:none;
+    background-color: #004cff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.hours-btn:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
 
 .synopsis h2 {
     width: 100%;
@@ -688,7 +723,7 @@ main {
 }
 
 .synopsis p {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     text-align: left;
     margin: 20px;
@@ -697,13 +732,18 @@ main {
 }
 
 .synopsis table {
-    width: 90%;
-    margin: 50px;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    box-shadow: 0 0 5px #fafafa;
+
 }
 
 .synopsis table * {
-    box-shadow: 0 0 5px #fafafa;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 /* Responsive design */
