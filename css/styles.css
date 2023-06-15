@@ -835,7 +835,7 @@ main {
 
 @media screen and (min-width:200px) and (max-width: 500px) {
     .carousel-container {
-        height: 15vh;
+        height: 25vh;
     }
 }
 
